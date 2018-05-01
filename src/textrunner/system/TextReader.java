@@ -23,4 +23,6 @@ public class TextReader {
         String[] sentences = this.text.split("\\.");
         return sentences;
     }
+
+
 }

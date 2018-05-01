@@ -31,11 +31,7 @@ public class Main {
                 System.out.println(s);
             }
         }
-        //
-//        System.out.println(test.html2text());
-//        for (Element pars : text) {
-//            System.out.println(pars.text());
-//        }
+
     }
 }
 
