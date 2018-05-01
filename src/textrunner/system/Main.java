@@ -39,7 +39,10 @@ public class Main {
 
             List<CoreMap> sentences = documentbody.get(CoreAnnotations.SentencesAnnotation.class);
 
-            
+            for(CoreMap sentence:sentences){
+                //getting sentences
+                System.out.println(sentence.toShorterString());
+            }
         }
 
     }
