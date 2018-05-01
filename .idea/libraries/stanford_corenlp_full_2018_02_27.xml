@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="stanford-corenlp-full-2018-02-27">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libraries/stanford-corenlp-full-2018-02-27" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/libraries/stanford-corenlp-full-2018-02-27" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/libraries/stanford-corenlp-full-2018-02-27" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libraries/stanford-corenlp-full-2018-02-27" recursive="false" type="SOURCES" />
+  </library>
+</component>
