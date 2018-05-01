@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="textrunner:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/textrunner_jar</output-path>
+    <root id="archive" name="textrunner.jar">
+      <element id="module-output" name="textrunner" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/jsoup-1.11.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/xom.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/jollyday.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/protobuf.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/ejml-0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/joda-time.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/slf4j-api.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/javax.json.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/slf4j-simple.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/ejml-0.23-src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/xom-1.2.10-src.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/joda-time-2.9-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/jollyday-0.4.9-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/stanford-corenlp-3.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/javax.json-api-1.0-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/stanford-corenlp-3.9.1-models.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/stanford-corenlp-3.9.1-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/stanford-corenlp-3.9.1-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27/stanford-english-corenlp-2018-02-27-models.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
