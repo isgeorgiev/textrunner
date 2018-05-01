@@ -1,11 +1,13 @@
 package textrunner.system;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.CoreMap;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Properties;
 
 
 public class Main {
@@ -16,6 +18,8 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException{
+
+
 //        Elements[] texts = new Elements[10];
 //        int counter = 0;
 //        for (String link: links){
@@ -24,12 +28,18 @@ public class Main {
 //            counter++;
 //
         for(String link:links) {
-            TextReader text = new TextReader(link);
-            String[] sentences = text.split();
-            System.out.println(text.text);
-            for (String s : sentences) {
-                System.out.println(s);
-            }
+
+            TextReader textInDocument = new TextReader(link);
+            String text = textInDocument.html2text();
+            Properties props = new Properties();
+            props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+            StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+            Annotation documentbody = new Annotation(text);
+            pipeline.annotate(documentbody);
+
+            List<CoreMap> sentences = documentbody.get(CoreAnnotations.SentencesAnnotation.class);
+
+            
         }
 
     }
