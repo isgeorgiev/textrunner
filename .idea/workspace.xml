@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3e0c7b-3923-46d1-81cd-852ef9babc10" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/stanford_corenlp_full_2018_02_27.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/stanford_corenlp_full_2018_02_27.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/textrunner/system/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textrunner/system/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/textrunner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/textrunner.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,11 +31,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/textrunner/system/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicPipelineExample.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BasicPipelineExample.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/textrunner/system/BasicPipelineExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="11" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +90,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -108,6 +109,11 @@
             <path>
               <item name="textrunner" type="b2602c69:ProjectViewProjectNode" />
               <item name="textrunner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textrunner" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="textrunner" type="b2602c69:ProjectViewProjectNode" />
@@ -131,7 +137,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stanford-corenlp-full-2018-02-27" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/stanford-corenlp-full-2018-02-27" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20973349" />
@@ -139,6 +145,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isgeo\IdeaProjects\textrunner\libs\stanford-corenlp-full-2018-02-27" />
       <recent name="C:\Users\isgeo\IdeaProjects\textrunner" />
       <recent name="C:\Users\isgeo\IdeaProjects\textrunner\src\textrunner\system" />
       <recent name="C:\Users\isgeo\IdeaProjects\textrunner\out\production" />
@@ -156,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.BasicPipelineExample">
     <configuration name="BasicPipelineExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="textrunner.system.BasicPipelineExample" />
       <module name="textrunner" />
@@ -195,8 +202,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.BasicPipelineExample" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -214,15 +221,16 @@
       <workItem from="1524578923212" duration="3804000" />
       <workItem from="1524693038291" duration="811000" />
       <workItem from="1525009517024" duration="6957000" />
-      <workItem from="1525165370666" duration="3195000" />
+      <workItem from="1525165370666" duration="3311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19609000" />
+    <option name="totallyTimeSpent" value="19725000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -233,12 +241,12 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.203125" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.203125" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="0" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
@@ -306,16 +314,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/textrunner/system/TextReader.java" />
-    <entry file="file://$PROJECT_DIR$/src/textrunner/system/BasicPipelineExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -328,8 +326,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/textrunner/system/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/textrunner/system/BasicPipelineExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -347,6 +355,7 @@
             <option name="proportions">
               <list>
                 <option value="0.20973349" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
