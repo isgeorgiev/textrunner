@@ -23,13 +23,13 @@ public class Main {
 //            texts[counter] = doc.select("body");
 //            counter++;
 //
-//      }
-
-        TextReader test = new TextReader(links[2]);
-        String[] sentences = test.split();
-        System.out.println(test.text);
-        for(String s:sentences){
-            System.out.println(s);
+        for(String link:links) {
+            TextReader text = new TextReader(link);
+            String[] sentences = text.split();
+            System.out.println(text.text);
+            for (String s : sentences) {
+                System.out.println(s);
+            }
         }
         //
 //        System.out.println(test.html2text());
