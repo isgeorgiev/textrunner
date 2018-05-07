@@ -9,16 +9,11 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 
-import static java.nio.charset.StandardCharsets.*;
-
 public class Main {
     public static String[] links = {"https://en.wikipedia.org/wiki/Mark_Zuckerberg", "https://en.wikipedia.org/wiki/Bill_Gates",
             "https://en.wikipedia.org/wiki/Steve_Jobs","https://en.wikipedia.org/wiki/Jeff_Bezos", "https://en.wikipedia.org/wiki/Tim_Cook",
             "https://en.wikipedia.org/wiki/Warren_Buffett","https://en.wikipedia.org/wiki/Berkshire_Hathaway",
             "https://en.wikipedia.org/wiki/Elon_Musk", "https://en.wikipedia.org/wiki/Larry_Page", "https://en.wikipedia.org/wiki/Sergey_Brin"};
-
-
-
 
     public static void main(String[] args) throws IOException{
 
@@ -26,16 +21,15 @@ public class Main {
 
             TextReader textInDocument = new TextReader(link);
             String text = textInDocument.html2text();
-            text = text.replaceAll(" [^\\x00-\\x7F]", "");
-
+            text = text.replaceAll("[^\\x00-\\x7F]", "");
+            System.out.println(text);
             Properties props = new Properties();
             props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
             StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
             Annotation documentbody = new Annotation(text);
 
             pipeline.annotate(documentbody);
-
-            System.out.println("saddasionasiasd");
+            
             List<CoreMap> sentences = documentbody.get(CoreAnnotations.SentencesAnnotation.class);
 
             for(CoreMap sentence:sentences){
