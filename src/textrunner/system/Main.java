@@ -19,18 +19,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException{
 
-
-//        Elements[] texts = new Elements[10];
-//        int counter = 0;
-//        for (String link: links){
-//            Document doc = Jsoup.connect(link).get();
-//            texts[counter] = doc.select("body");
-//            counter++;
-//
         for(String link:links) {
 
             TextReader textInDocument = new TextReader(link);
             String text = textInDocument.html2text();
+
             Properties props = new Properties();
             props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
             StanfordCoreNLP pipeline = new StanfordCoreNLP(props);

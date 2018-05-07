@@ -1,0 +1,57 @@
+<project name="TextRunner" default="dist" basedir=".">
+    <description>
+        TextRunner - Open Information Extraction
+    </description>
+    <!-- set global properties for this build -->
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist" location="dist"/>
+
+
+
+    <path id="build.classpath">
+        <fileset dir="libs">
+            <include name="*.jar"/>
+            <include name="stanford-corenlp-full-2018-02-27/*.jar" />
+        </fileset>
+    </path>
+
+    <manifestclasspath property="lib.list" jarfile="${basedir}/text-runner.jar">
+        <classpath refid="build.classpath" />
+    </manifestclasspath>
+
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+    </target>
+
+    <target name="compile" depends="init"
+            description="compile the source">
+        <!-- Compile the Java code from ${src} into ${build} -->
+        <javac srcdir="${src}" includeantruntime="false" destdir="${build}">
+            <classpath refid="build.classpath"/>
+        </javac>
+    </target>
+
+
+    <target depends="compile" name="dist">
+        <jar jarfile="${basedir}/text-runner.jar">
+            <fileset dir="${build}" />
+            <manifest>
+                <attribute name="Main-Class" value="textrunner.system.Main"/>
+                <attribute name="Class-Path" value=". ${lib.list}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean"
+            description="clean up">
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+        <delete file="text-runner.jar"/>
+    </target>
+</project>
+

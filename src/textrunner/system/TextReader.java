@@ -4,12 +4,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
-import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.ling.*;
-import edu.stanford.nlp.pipeline.*;
-import edu.stanford.nlp.coref.data.CorefChain;
-
-import java.util.*;
 import java.io.IOException;
 
 
