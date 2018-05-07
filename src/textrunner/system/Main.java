@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 
+import static java.nio.charset.StandardCharsets.*;
 
 public class Main {
     public static String[] links = {"https://en.wikipedia.org/wiki/Mark_Zuckerberg", "https://en.wikipedia.org/wiki/Bill_Gates",
@@ -21,12 +22,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException{
 
-
-
         for(String link:links) {
 
             TextReader textInDocument = new TextReader(link);
             String text = textInDocument.html2text();
+            text = text.replaceAll(" [^\\x00-\\x7F]", "");
 
             Properties props = new Properties();
             props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
