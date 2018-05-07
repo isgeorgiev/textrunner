@@ -28,12 +28,15 @@ public class Main {
             props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
             StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
             Annotation documentbody = new Annotation(text);
+
             pipeline.annotate(documentbody);
 
+            System.out.println("saddasionasiasd");
             List<CoreMap> sentences = documentbody.get(CoreAnnotations.SentencesAnnotation.class);
 
             for(CoreMap sentence:sentences){
                 //getting sentences
+
                 System.out.println(sentence.toShorterString());
             }
         }
