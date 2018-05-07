@@ -17,7 +17,11 @@ public class Main {
             "https://en.wikipedia.org/wiki/Elon_Musk", "https://en.wikipedia.org/wiki/Larry_Page", "https://en.wikipedia.org/wiki/Sergey_Brin"};
 
 
+
+
     public static void main(String[] args) throws IOException{
+
+
 
         for(String link:links) {
 
