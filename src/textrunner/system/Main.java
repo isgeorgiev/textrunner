@@ -22,14 +22,13 @@ public class Main {
             TextReader textInDocument = new TextReader(link);
             String text = textInDocument.html2text();
             text = text.replaceAll("[^\\x00-\\x7F]", "");
-            System.out.println(text);
             Properties props = new Properties();
             props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
             StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
             Annotation documentbody = new Annotation(text);
 
             pipeline.annotate(documentbody);
-            
+
             List<CoreMap> sentences = documentbody.get(CoreAnnotations.SentencesAnnotation.class);
 
             for(CoreMap sentence:sentences){
