@@ -1,7 +1,7 @@
 package textrunner.system;
 
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.CoreDocument;
+import edu.stanford.nlp.pipeline.CoreSentence;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 
@@ -26,16 +26,16 @@ public class Main {
             TextReader textInDocument = new TextReader(link);
             String text = textInDocument.html2text();
             text = text.replaceAll("[^\\x00-\\x7F]", "");
-            Annotation documentbody = new Annotation(text);
 
+            CoreDocument documentbody = new CoreDocument(text);
             pipeline.annotate(documentbody);
 
-            List<CoreMap> sentences = documentbody.get(CoreAnnotations.SentencesAnnotation.class);
+            List<CoreSentence> sentences = documentbody.sentences();
 
-            for(CoreMap sentence:sentences){
+            for(CoreSentence sentence:sentences){
                 //getting sentences
 
-                System.out.println(sentence.toShorterString());
+                System.out.println(sentence.text());
             }
         }
 
