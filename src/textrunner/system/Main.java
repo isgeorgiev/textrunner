@@ -36,11 +36,12 @@ public class Main {
 
         List<CoreSentence> sentences = documentbody.sentences();
 
+        System.out.println(sentences.get(0).text());
+        /*
         for(CoreSentence sentence:sentences){
             //getting sentences
-
             System.out.println(sentence.text());
-        }
+        }*/
 
 
     }
