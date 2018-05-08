@@ -3,7 +3,6 @@ package textrunner.system;
 import edu.stanford.nlp.pipeline.CoreDocument;
 import edu.stanford.nlp.pipeline.CoreSentence;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.util.CoreMap;
 
 import java.io.IOException;
 import java.util.List;
@@ -59,16 +58,16 @@ public class Main {
 //                "The request first has to go from the phone to the nearest cellular tower. That request travels through the air where it is subject to a large degree of interference. Once it arrives at the cell tower, the request is routed to a mobile company server that uses a GPRS (General Packet Radio Service). For 3G, this is a GGSN (Gateway GPRS Support Node) that acts as an intermediary between the user and the Internet (see figure 1). The GGSN assigns IP addresses, filters packets, and generally acts as a gateway to the real Internet. The GGSN then sends the request to the appropriate location (DNS, HTTP, or other), and the response has to come all the way back from the Internet to the GGSN to the cell tower and finally to the phone. All of that back and forth creates a lot of latency in the system.";
         CoreDocument documentbody = new CoreDocument(text);
         pipeline.annotate(documentbody);
-
+//
         List<CoreSentence> sentences = documentbody.sentences();
+//
+//        System.out.println(sentences.get(0).text());
 
-        System.out.println(sentences.get(0).text());
-        /*
         for(CoreSentence sentence:sentences){
             //getting sentences
             System.out.println(sentence.text());
-        }*/
-
+        }
+//        System.out.println(text);
 
     }
 }
