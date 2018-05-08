@@ -16,7 +16,7 @@ public class Main {
             "https://en.wikipedia.org/wiki/Elon_Musk", "https://en.wikipedia.org/wiki/Larry_Page", "https://en.wikipedia.org/wiki/Sergey_Brin"};
 
     public static void main(String[] args) throws IOException{
-        
+        String text=null;
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse,depparse,coref,kbp,quote");
         // set a property for an annotator, in this case the coref annotator is being set to use the neural algorithm
@@ -27,21 +27,21 @@ public class Main {
         for(String link:links) {
 
             TextReader textInDocument = new TextReader(link);
-            String text = textInDocument.html2text();
-            text = text.replaceAll("[^\\x00-\\x7F]", "");
-            //text = text + "\n" + text2add;
-
-            CoreDocument documentbody = new CoreDocument(text);
-            pipeline.annotate(documentbody);
-
-            List<CoreSentence> sentences = documentbody.sentences();
-
-            for (CoreSentence sentence : sentences) {
-                //getting sentences
-
-                System.out.println(sentence.text());
-            }
+            String text2add = textInDocument.html2text();
+            text2add = text2add.replaceAll("[^\\x00-\\x7F]", "");
+            text = text + "\n" + text2add;
         }
+        CoreDocument documentbody = new CoreDocument(text);
+        pipeline.annotate(documentbody);
+
+        List<CoreSentence> sentences = documentbody.sentences();
+
+        for(CoreSentence sentence:sentences){
+            //getting sentences
+
+            System.out.println(sentence.text());
+        }
+
 
     }
 }
