@@ -16,9 +16,12 @@ public class Main {
             "https://en.wikipedia.org/wiki/Elon_Musk", "https://en.wikipedia.org/wiki/Larry_Page", "https://en.wikipedia.org/wiki/Sergey_Brin"};
 
     public static void main(String[] args) throws IOException{
-
+        
         Properties props = new Properties();
-        props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+        props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse,depparse,coref,kbp,quote");
+        // set a property for an annotator, in this case the coref annotator is being set to use the neural algorithm
+        props.setProperty("coref.algorithm", "neural");
+        // build pipeline
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
         for(String link:links) {
@@ -26,13 +29,14 @@ public class Main {
             TextReader textInDocument = new TextReader(link);
             String text = textInDocument.html2text();
             text = text.replaceAll("[^\\x00-\\x7F]", "");
+            //text = text + "\n" + text2add;
 
             CoreDocument documentbody = new CoreDocument(text);
             pipeline.annotate(documentbody);
 
             List<CoreSentence> sentences = documentbody.sentences();
 
-            for(CoreSentence sentence:sentences){
+            for (CoreSentence sentence : sentences) {
                 //getting sentences
 
                 System.out.println(sentence.text());
