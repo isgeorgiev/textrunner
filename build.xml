@@ -40,7 +40,7 @@
         <jar jarfile="${basedir}/text-runner.jar">
             <fileset dir="${build}" />
             <manifest>
-                <attribute name="Main-Class" value="textrunner.system.Main"/>
+                <attribute name="Main-Class" value="textrunner.system.BasicPipelineExample"/>
                 <attribute name="Class-Path" value=". ${lib.list}"/>
             </manifest>
         </jar>

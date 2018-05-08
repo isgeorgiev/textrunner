@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b3e0c7b-3923-46d1-81cd-852ef9babc10" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/textrunner/system/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textrunner/system/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="3b3e0c7b-3923-46d1-81cd-852ef9babc10" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +24,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/textrunner/system/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="320">
               <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -265,16 +263,15 @@
       <workItem from="1524693038291" duration="811000" />
       <workItem from="1525009517024" duration="6957000" />
       <workItem from="1525165370666" duration="11459000" />
-      <workItem from="1525704329776" duration="11958000" />
+      <workItem from="1525704329776" duration="12560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39831000" />
+    <option name="totallyTimeSpent" value="40433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -286,7 +283,7 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32965517" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
@@ -437,7 +434,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/textrunner/system/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="320">
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
