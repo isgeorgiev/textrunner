@@ -21,13 +21,14 @@ public class Main {
         // build pipeline
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
-        for(String link:links) {
-
-            TextReader textInDocument = new TextReader(link);
-            String text2add = textInDocument.html2text();
-            text2add = text2add.replaceAll("[^\\x00-\\x7F]", "");
-            text = text + "\n" + text2add;
-        }
+//        for(String link:links) {
+//
+//            TextReader textInDocument = new TextReader(link);
+//            String text2add = textInDocument.html2text();
+//            text2add = text2add.replaceAll("[^\\x00-\\x7F]", "");
+//            text = text + "\n" + text2add;
+//        }
+        text = "This is sentence one. This is sentence two. And this is sentence 3";
         CoreDocument documentbody = new CoreDocument(text);
         pipeline.annotate(documentbody);
 
