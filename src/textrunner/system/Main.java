@@ -17,14 +17,15 @@ public class Main {
 
     public static void main(String[] args) throws IOException{
 
+        Properties props = new Properties();
+        props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+
         for(String link:links) {
 
             TextReader textInDocument = new TextReader(link);
             String text = textInDocument.html2text();
             text = text.replaceAll("[^\\x00-\\x7F]", "");
-            Properties props = new Properties();
-            props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-            StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
             Annotation documentbody = new Annotation(text);
 
             pipeline.annotate(documentbody);
