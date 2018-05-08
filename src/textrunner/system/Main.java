@@ -10,10 +10,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class Main {
-    public static String[] links = {"https://en.wikipedia.org/wiki/Mark_Zuckerberg", "https://en.wikipedia.org/wiki/Bill_Gates",
-            "https://en.wikipedia.org/wiki/Steve_Jobs","https://en.wikipedia.org/wiki/Jeff_Bezos", "https://en.wikipedia.org/wiki/Tim_Cook",
-            "https://en.wikipedia.org/wiki/Warren_Buffett","https://en.wikipedia.org/wiki/Berkshire_Hathaway",
-            "https://en.wikipedia.org/wiki/Elon_Musk", "https://en.wikipedia.org/wiki/Larry_Page", "https://en.wikipedia.org/wiki/Sergey_Brin"};
+    public static String[] links = {"https://en.wikipedia.org/wiki/Mark_Zuckerberg"};
 
     public static void main(String[] args) throws IOException{
         String text=null;
